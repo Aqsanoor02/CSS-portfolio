@@ -1,0 +1,83 @@
+/* Navbar.css */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  
+  .navbar-header {
+    background-color: #000; /* Background black */
+    color: #fff;
+  }
+  
+  .navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-container {
+      flex-direction: row;
+    }
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    color: #1a202c; /* Equivalent to Tailwind text-gray-900 */
+    margin-bottom: 16px;
+    text-decoration: none;
+  }
+  
+  .logo-container img {
+    margin-right: 12px;
+  }
+  
+  .logo-text {
+    color: #81e6d9; /* Equivalent to Tailwind text-teal-100 */
+    font-size: 1.25rem;
+    margin-left: 12px;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-left: 1px solid #cbd5e0; /* Tailwind border-gray-400 */
+    padding-left: 16px;
+    margin-left: 16px;
+    gap: 16px;
+  }
+  
+  .nav-item {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: #a0aec0; /* Tailwind text-gray-300 */
+  }
+  
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #4fd1c5; /* Tailwind bg-teal-400 */
+    border: none;
+    padding: 8px 12px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #319795; /* Tailwind bg-teal-600 */
+  }
+  

@@ -1,0 +1,97 @@
+/* Hero.css */
+.hero-section {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  #holder{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .body-font {
+    color: #4a5568; /* Tailwind color equivalent for text-gray-600 */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  
+  .container.flex {
+    flex-direction: row;
+  }
+  
+  .image-container {
+    max-width: 96%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-right: 4px solid #2d3748; /* Equivalent color for border-gray-700 */
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .text-container {
+    flex-grow: 1;
+    text-align: center;
+    padding-left: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .text-container {
+      text-align: left;
+      padding-left: 64px;
+    }
+  }
+  
+  .title {
+    font-size: 1.875rem; /* 3xl equivalent */
+    font-weight: 500;
+    color: #1a202c; /* Tailwind color equivalent for text-gray-900 */
+    margin-bottom: 16px;
+  }
+  
+  .break-line {
+    display: none;
+  }
+  
+  @media (min-width: 1024px) {
+    .break-line {
+      display: inline-block;
+    }
+  }
+  
+  .subtitle {
+    color: #000;
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+  }
+  
+  .description {
+    margin-bottom: 32px;
+    line-height: 1.6;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #000;
+    border: none;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 1.25rem; /* 2xl equivalent */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    background-color: #38b2ac; /* Tailwind equivalent for bg-teal-600 */
+  }
+  
